@@ -20,10 +20,10 @@ public class Customer {
     private String username;
 
     @NonNull
-    private String firstName;
+    private String firstname;
 
     @NonNull
-    private String lastName;
+    private String lastname;
 
     @NonNull
     private String postalCode;
@@ -39,16 +39,16 @@ public class Customer {
             @JsonProperty("id") @NonNull Integer id,
             @JsonProperty("createdAt") @NonNull LocalDateTime createdAt,
             @JsonProperty("username") @NonNull String username,
-            @JsonProperty("firstName") @NonNull String firstName,
-            @JsonProperty("lastName") @NonNull String lastName,
+            @JsonProperty("firstname") @NonNull String firstname,
+            @JsonProperty("lastname") @NonNull String lastname,
             @JsonProperty("postalCode") @NonNull String postalCode,
             @JsonProperty("city") @NonNull String city,
             @JsonProperty("companyName") @NonNull String companyName) {
         this.id = id;
         this.createdAt = createdAt;
         this.username = username;
-        this.firstName = firstName;
-        this.lastName = lastName;
+        this.firstname = firstname;
+        this.lastname = lastname;
         this.postalCode = postalCode;
         this.city = city;
         this.companyName = companyName;

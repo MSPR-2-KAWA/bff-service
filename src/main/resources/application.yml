@@ -9,4 +9,4 @@ logging:
 feign:
   customer:
     service:
-      url: ${CUSTOMER_SERVICE_URL}
+      url: ${CUSTOMER_SERVICE_URL:http://localhost:8083}
