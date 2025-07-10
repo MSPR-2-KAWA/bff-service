@@ -86,8 +86,8 @@ public class CustomerControllerTest {
                             .content("""
                                     {
                                         "username": "newUsername",
-                                        "firstname": "newFirst",
-                                        "lastname": "newLast",
+                                        "firstName": "newFirst",
+                                        "lastName": "newLast",
                                         "postalCode": "12345",
                                         "city": "NewCity",
                                         "companyName": "NewCompany"
@@ -95,8 +95,8 @@ public class CustomerControllerTest {
                                     """))
                     .andExpect(status().isOk())
                     .andExpect(jsonPath("$.username").value("newUsername"))
-                    .andExpect(jsonPath("$.firstname").value("newFirst"))
-                    .andExpect(jsonPath("$.lastname").value("newLast"))
+                    .andExpect(jsonPath("$.firstName").value("newFirst"))
+                    .andExpect(jsonPath("$.lastName").value("newLast"))
                     .andExpect(jsonPath("$.postalCode").value("12345"))
                     .andExpect(jsonPath("$.city").value("NewCity"))
                     .andExpect(jsonPath("$.companyName").value("NewCompany"));
@@ -113,8 +113,8 @@ public class CustomerControllerTest {
                             .content("""
                                     {
                                         "username": "username",
-                                        "firstname": "first",
-                                        "lastname": "last",
+                                        "firstName": "first",
+                                        "lastName": "last",
                                         "postalCode": "00000",
                                         "city": "City",
                                         "companyName": "Company"
@@ -138,8 +138,8 @@ public class CustomerControllerTest {
                             .content("""
                                     {
                                         "username": "newUsername",
-                                        "firstname": "newFirst",
-                                        "lastname": "newLast",
+                                        "firstName": "newFirst",
+                                        "lastName": "newLast",
                                         "postalCode": "12345",
                                         "city": "NewCity",
                                         "companyName": "NewCompany"
@@ -147,8 +147,8 @@ public class CustomerControllerTest {
                                     """))
                     .andExpect(status().isOk())
                     .andExpect(jsonPath("$.username").value("newUsername"))
-                    .andExpect(jsonPath("$.firstname").value("newFirst"))
-                    .andExpect(jsonPath("$.lastname").value("newLast"))
+                    .andExpect(jsonPath("$.firstName").value("newFirst"))
+                    .andExpect(jsonPath("$.lastName").value("newLast"))
                     .andExpect(jsonPath("$.postalCode").value("12345"))
                     .andExpect(jsonPath("$.city").value("NewCity"))
                     .andExpect(jsonPath("$.companyName").value("NewCompany"));
