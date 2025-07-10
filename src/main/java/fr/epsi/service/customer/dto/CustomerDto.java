@@ -13,10 +13,10 @@ public class CustomerDto {
     String username;
 
     @NonNull
-    String firstname;
+    String firstName;
 
     @NonNull
-    String lastname;
+    String lastName;
 
     @NonNull
     String postalCode;

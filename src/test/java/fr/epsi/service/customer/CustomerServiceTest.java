@@ -69,8 +69,8 @@ public class CustomerServiceTest {
             assertEquals(expectedCustomer.getId(), result.getId());
             assertEquals(expectedCustomer.getCreatedAt(), result.getCreatedAt());
             assertEquals(expectedCustomer.getUsername(), result.getUsername());
-            assertEquals(expectedCustomer.getFirstname(), result.getFirstname());
-            assertEquals(expectedCustomer.getLastname(), result.getLastname());
+            assertEquals(expectedCustomer.getFirstName(), result.getFirstName());
+            assertEquals(expectedCustomer.getLastName(), result.getLastName());
             assertEquals(expectedCustomer.getPostalCode(), result.getPostalCode());
             assertEquals(expectedCustomer.getCity(), result.getCity());
             assertEquals(expectedCustomer.getCompanyName(), result.getCompanyName());
@@ -93,8 +93,8 @@ public class CustomerServiceTest {
             assertEquals(expectedCustomer.getId(), result.getId());
             assertEquals(expectedCustomer.getCreatedAt(), result.getCreatedAt());
             assertEquals(expectedCustomer.getUsername(), result.getUsername());
-            assertEquals(expectedCustomer.getFirstname(), result.getFirstname());
-            assertEquals(expectedCustomer.getLastname(), result.getLastname());
+            assertEquals(expectedCustomer.getFirstName(), result.getFirstName());
+            assertEquals(expectedCustomer.getLastName(), result.getLastName());
             assertEquals(expectedCustomer.getPostalCode(), result.getPostalCode());
             assertEquals(expectedCustomer.getCity(), result.getCity());
             assertEquals(expectedCustomer.getCompanyName(), result.getCompanyName());
