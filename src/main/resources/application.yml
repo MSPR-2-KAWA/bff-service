@@ -10,3 +10,6 @@ feign:
   customer:
     service:
       url: ${CUSTOMER_SERVICE_URL:http://localhost:8083}
+  product:
+    service:
+      url: ${PRODUCT_SERVICE_URL:http://localhost:8081}
