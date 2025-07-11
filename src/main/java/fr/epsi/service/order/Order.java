@@ -13,17 +13,17 @@ public class Order {
     Integer id;
     LocalDateTime createdAt;
     Integer customerId;
-    List<Integer> productIds;
+    List<OrderProductItem> items;
 
     @JsonCreator
     public Order(
             @JsonProperty("id") @NonNull Integer id,
             @JsonProperty("createdAt") @NonNull LocalDateTime createdAt,
             @JsonProperty("customerId") @NonNull Integer customerId,
-            @JsonProperty("productIds") @NonNull List<Integer> productIds){
+            @JsonProperty("items") @NonNull List<OrderProductItem> items) {
         this.id = id;
         this.createdAt = createdAt;
         this.customerId = customerId;
-        this.productIds = productIds;
+        this.items = items;
     }
 }
